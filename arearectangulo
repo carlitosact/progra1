@@ -1,0 +1,22 @@
+# rectangulo// prog.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{ 
+	float base, altura, area;
+	cout<<"ingrese base ,altura";
+	cin>> base;
+    cin>>altura;
+	area = base*altura;
+
+	
+	cout<<"area es ="<<area;
+	getch();
+}
