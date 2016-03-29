@@ -1,0 +1,19 @@
+// prog.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{ 
+	float radio, area;
+	cout<<"ingrese radio";
+	cin>> radio;
+	area =3.141516*radio*radio;
+	cout<<"area es ="<<area;
+	getch();
+}
