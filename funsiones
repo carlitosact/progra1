@@ -1,0 +1,100 @@
+// prog.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using  namespace std;
+
+void main ()
+{  
+
+	float area_cuadrado(float l);
+	float potencia(float n,int exp,float z);
+	int max_comun(int num1, int num2);
+
+	void main()
+	{ 
+
+	   int opcion,exp,num1,num2,num3,R3;
+	   float 1,n,R1,R2;
+	   system("color 8b");
+
+	   do {
+
+		    cout<<"menu de opciones"<<endl;
+			cout<<"area de un cuadrado"<<endl;
+			cout<<"la potencia de un numeo"<<endl;
+			cout<<"el maximo como divisor de un numero"<<endl;
+			cout<<"salir"<<endl,
+			cout<<"ingrese la opcion que desea"<<endl;
+			cin>>opcion;
+			switch (opcion)
+	   }
+
+			case 1:{("ingrese el valor de lado");
+				  cin>>1;
+				  R1=area_cuadrado(1);
+				  cout<<("el resultado de area es");<<R1;
+				  getch ();
+				  break ;}
+
+			case 2:{("ingrese el valor del numero");
+				cin>>n;
+				cout<<("ingrese el valor del exponente");
+				cin>>exp;
+				potencia (n,exp,R2);
+				cout<<("el resultado de la potencia sera:"<<R2;
+				break;}
+	
+ 	case 3:{cout<<"ingrese el el valor del primer numero";
+			cin>>num1;
+			cout<<"ingrese el valor del segundo numero";
+			cin>>num2;
+			Max_comun (num1, num2);
+			R3 = Max_comun(num1, num2);
+			cout<<" el resultado del MCD es:"<<R3;
+			getch ();
+			break;}
+		case 0:{cout<<"sale del programa";
+			getch();
+			break;}
+		default: {cout<<"Error";
+			getch();
+			break;}
+
+				 	}
+	}while (opcion!=0);
+}
+
+float area_cuadrado (float l)
+	{
+			float R1;
+			R1= l*l;
+			return (R1);
+	}
+float potencia (float n, int exp, float &z)
+	{
+			int i;
+			z=1;
+			for (i=1;i<=exp;i++)
+				z=i*n;
+			return (z);
+		}
+
+		int Max_comun (int num1, int num2)
+		{
+			int X;
+			while (num1!=num2);
+			{
+				if (num1>num2)
+					num1=num1-num2;
+				else
+					num2=num2-num1;
+
+			}
+			X=num1;
+			return X;
+
+		}
